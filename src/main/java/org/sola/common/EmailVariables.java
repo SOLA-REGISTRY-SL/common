@@ -7,6 +7,8 @@ package org.sola.common;
 public class EmailVariables {
     /** Full user name (e.g. John Smith) */
     public static final String FULL_USER_NAME = "#{userFullName}";
+    /** First user name (e.g. John) */
+    public static final String USER_FIRST_NAME = "#{userFirstName}";
     /** User name, used for login into the system */
     public static final String USER_NAME = "#{userName}";
     /** Error message text */
@@ -27,4 +29,6 @@ public class EmailVariables {
     public static final String CLAIM_CHALLENGE_LINK = "#{challengeLink}";
     /** Open Tenure claim challenge number */
     public static final String CLAIM_CHALLENGE_NUMBER = "#{challengeNumber}";
+    /** Open Tenure claim comments */
+    public static final String CLAIM_COMMENTS = "#{claimComments}";
 }

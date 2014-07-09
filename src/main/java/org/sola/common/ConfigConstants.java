@@ -255,6 +255,26 @@ public class ConfigConstants {
      */
     public static final String EMAIL_MSG_CLAIM_SUBMITTED_SUBJECT = "email-msg-claim-submit-subject";
     /**
+     * Body text for claim withdrawal action
+     */
+    public static final String EMAIL_MSG_CLAIM_WITHDRAW_BODY = "email-msg-claim-withdraw-doby";
+    /**
+     * Subject text for claim withdrawal action
+     */
+    public static final String EMAIL_MSG_CLAIM_WITHDRAW_SUBJECT = "email-msg-claim-withdraw-subject";
+    /** Body text for claim reject action */
+    public static final String EMAIL_MSG_CLAIM_REJECT_BODY = "email-msg-claim-reject-doby";
+    /** Subject text for claim reject action */
+    public static final String EMAIL_MSG_CLAIM_REJECT_SUBJECT = "email-msg-claim-reject-subject";
+    /** Body text for claim review approve action */
+    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_BODY = "email-msg-claim-approve-review-doby";
+    /** Subject text for claim review approve action */
+    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_SUBJECT = "email-msg-claim-approve-review-subject";
+    /** Body text for claim moderation approve action */
+    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_BODY = "email-msg-claim-approve-moderation-doby";
+    /** Subject text for claim moderation approve action */
+    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_SUBJECT = "email-msg-claim-approve-moderation-subject";
+    /**
      * Claim update body text.
      */
     public static final String EMAIL_MSG_CLAIM_UPDATED_BODY = "email-msg-claim-updated-body";

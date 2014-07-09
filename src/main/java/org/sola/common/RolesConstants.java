@@ -99,4 +99,6 @@ public class RolesConstants {
     // COMMUNITY SERVER
     public static final String CS_ACCESS_CS = "AccessCS";
     public static final String CS_MODERATE_CLAIM = "ModerateClaim";
+    public static final String CS_REVIEW_CLAIM = "ReviewClaim";
+    public static final String CS_RECORD_CLAIM = "RecordClaim";
 }
