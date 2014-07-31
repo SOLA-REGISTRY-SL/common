@@ -31,4 +31,12 @@ public class EmailVariables {
     public static final String CLAIM_CHALLENGE_NUMBER = "#{challengeNumber}";
     /** Open Tenure claim comments */
     public static final String CLAIM_COMMENTS = "#{claimComments}";
+    /** Open Tenure claim challenge comments */
+    public static final String CLAIM_CHALLENGE_COMMENTS = "#{challengeComments}";
+    /** Open Tenure claim party role (e.g. claimant) */
+    public static final String CLAIM_PARTY_ROLE = "#{partyRole}";
+    /** Open Tenure claim rejection reason */
+    public static final String CLAIM_REJECTION_REASON = "#{claimRejectionReason}";
+    /** Open Tenure claim challenge rejection reason */
+    public static final String CLAIM_CHALLENGE_REJECTION_REASON = "#{challengeRejectionReason}";
 }

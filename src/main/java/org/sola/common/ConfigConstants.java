@@ -257,21 +257,21 @@ public class ConfigConstants {
     /**
      * Body text for claim withdrawal action
      */
-    public static final String EMAIL_MSG_CLAIM_WITHDRAW_BODY = "email-msg-claim-withdraw-doby";
+    public static final String EMAIL_MSG_CLAIM_WITHDRAW_BODY = "email-msg-claim-withdraw-body";
     /**
      * Subject text for claim withdrawal action
      */
     public static final String EMAIL_MSG_CLAIM_WITHDRAW_SUBJECT = "email-msg-claim-withdraw-subject";
     /** Body text for claim reject action */
-    public static final String EMAIL_MSG_CLAIM_REJECT_BODY = "email-msg-claim-reject-doby";
+    public static final String EMAIL_MSG_CLAIM_REJECT_BODY = "email-msg-claim-reject-body";
     /** Subject text for claim reject action */
     public static final String EMAIL_MSG_CLAIM_REJECT_SUBJECT = "email-msg-claim-reject-subject";
     /** Body text for claim review approve action */
-    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_BODY = "email-msg-claim-approve-review-doby";
+    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_BODY = "email-msg-claim-approve-review-body";
     /** Subject text for claim review approve action */
     public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_SUBJECT = "email-msg-claim-approve-review-subject";
     /** Body text for claim moderation approve action */
-    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_BODY = "email-msg-claim-approve-moderation-doby";
+    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_BODY = "email-msg-claim-approve-moderation-body";
     /** Subject text for claim moderation approve action */
     public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_SUBJECT = "email-msg-claim-approve-moderation-subject";
     /**
@@ -282,6 +282,22 @@ public class ConfigConstants {
      * Claim update subject text.
      */
     public static final String EMAIL_MSG_CLAIM_UPDATED_SUBJECT = "email-msg-claim-updated-subject";
+    /** Body text for claim challenge review action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REVIEW_BODY = "email-msg-claim-challenge-approve-review-body";
+    /** Subject text for claim challenge review action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REVIEW_SUBJECT = "email-msg-claim-challenge-approve-review-subject";
+    /** Body text for claim challenge moderation action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_MODERATION_BODY = "email-msg-claim-challenge-approve-moderation-body";
+    /** Subject text for claim challenge moderation action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_MODERATION_SUBJECT = "email-msg-claim-challenge-approve-moderation-subj";
+    /** Body text for claim challenge rejection action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REJECTION_BODY = "email-msg-claim-challenge-reject-body";
+    /** Subject text for claim challenge rejection action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REJECTION_SUBJECT = "email-msg-claim-challenge-reject-subject";
+    /** Body text for claim challenge withdrawal action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_WITHDRAWAL_BODY = "email-msg-claim-challenge-withdraw-body";
+    /** Subject text for claim challenge withdrawal action. */
+    public static final String EMAIL_MSG_CLAIM_CHALLENGE_WITHDRAWAL_SUBJECT = "email-msg-claim-challenge-withdraw-subject";
     /**
      * Message text for delivery failure.
      */
