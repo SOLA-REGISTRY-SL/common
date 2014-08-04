@@ -362,4 +362,7 @@ public class ConfigConstants {
      * Time interval in seconds for email service to check and process scheduled messages.
      */
     public static final String EMAIL_SERVICE_INTERVAL = "email-service-interval";
+    
+    /** Open Tenure community area where parcels can be claimed */
+    public static final String OT_COMMUNITY_AREA = "ot-community-area";
 }

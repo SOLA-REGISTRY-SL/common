@@ -1,28 +1,30 @@
 /**
  * ******************************************************************************************
- * Copyright (C) 2014 - Food and Agriculture Organization of the United Nations (FAO).
- * All rights reserved.
+ * Copyright (C) 2014 - Food and Agriculture Organization of the United Nations
+ * (FAO). All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
  *
- *    1. Redistributions of source code must retain the above copyright notice,this list
- *       of conditions and the following disclaimer.
- *    2. Redistributions in binary form must reproduce the above copyright notice,this list
- *       of conditions and the following disclaimer in the documentation and/or other
- *       materials provided with the distribution.
- *    3. Neither the name of FAO nor the names of its contributors may be used to endorse or
- *       promote products derived from this software without specific prior written permission.
+ * 1. Redistributions of source code must retain the above copyright notice,this
+ * list of conditions and the following disclaimer. 2. Redistributions in binary
+ * form must reproduce the above copyright notice,this list of conditions and
+ * the following disclaimer in the documentation and/or other materials provided
+ * with the distribution. 3. Neither the name of FAO nor the names of its
+ * contributors may be used to endorse or promote products derived from this
+ * software without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
- * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
- * SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT
- * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,STRICT LIABILITY,OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
- * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT,STRICT LIABILITY,OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
  * *********************************************************************************************
  */
 package org.sola.common;
@@ -148,7 +150,8 @@ public class FileUtility {
      * The maximum size of a file (in bytes) that can be loaded into SOLA.
      * Default is 100MB.
      *
-     * <p>SOLA uses a file streaming service to upload and download files to and
+     * <p>
+     * SOLA uses a file streaming service to upload and download files to and
      * from the client. The file streaming service streams files directly to
      * disk and does not store them in memory allowing the SOLA client
      * application to potentially handle files of any size. However, be aware
@@ -428,7 +431,7 @@ public class FileUtility {
                             null,
                             true, // fill background with white
                             true // block until drawing is done
-                            );
+                    );
 
                     buf.clear();
                     channel.close();
@@ -552,16 +555,18 @@ public class FileUtility {
      * file. Used to allow more efficient management of large file transfers
      * between the SOLA client(s) and the web services.
      *
-     * <p>If the DataHandler is a {@linkplain StreamingDataHandler}, then the
+     * <p>
+     * If the DataHandler is a {@linkplain StreamingDataHandler}, then the
      * {@linkplain StreamingDataHandler#moveTo(java.io.File)} method is used to
      * save the file to disk. Otherwise the InputStream from the DataHandler is
      * written to disk using
      * {@linkplain #writeFileToCache(java.io.InputStream, java.io.File) writeFileToCache}.</p>
      *
-     * <p>Note that file streaming is not currently supported if Metro security
-     * is used. Refer to http://java.net/jira/browse/WSIT-1081 for details.
-     * Using Security also substantially increases the memory required to handle
-     * large files with a practical limit around 15MB to 20MB.</p>
+     * <p>
+     * Note that file streaming is not currently supported if Metro security is
+     * used. Refer to http://java.net/jira/browse/WSIT-1081 for details. Using
+     * Security also substantially increases the memory required to handle large
+     * files with a practical limit around 15MB to 20MB.</p>
      *
      * @param dataHandler The dataHandler representing the file.
      * @param fileName The name of the file to write the DataHander stream to.
@@ -820,33 +825,66 @@ public class FileUtility {
         zipFile.extractAll(destinationPath);
         return fileUncompressed;
     }
-    
+
     /** 
-     * Formats file size, applying KB, MB, GB units.
-     * @param size Size to format
-     * @return 
+     * Deletes directory with all sub folders and files. 
+     * @param file Directory to delete
+     * @throws java.io.IOException
      */
-    public static String formatFileSize(long size){
-        if(size == 0){
+    public static void deleteDirectory(File file) throws IOException {
+        if (file.isDirectory()) {
+            //directory is empty, delete it
+            if (file.list().length == 0) {
+                file.delete();
+            } else {
+                // loop through the files
+                String files[] = file.list();
+
+                for (String temp : files) {
+                    File fileDelete = new File(file, temp);
+                    //recursive delete
+                    deleteDirectory(fileDelete);
+                }
+
+                //check the directory again, if empty then delete it
+                if (file.list().length == 0) {
+                    file.delete();
+                }
+            }
+
+        } else {
+            //if file, then delete it
+            file.delete();
+        }
+    }
+
+    /**
+     * Formats file size, applying KB, MB, GB units.
+     *
+     * @param size Size to format
+     * @return
+     */
+    public static String formatFileSize(long size) {
+        if (size == 0) {
             return "0";
         }
-        
-        if(size < 1024){
+
+        if (size < 1024) {
             return size + "B";
         }
-        
-        if(size >= 1024 && size < 1048576){
-            return Math.round((size/1024)*100.0)/100.0 + "KB";
+
+        if (size >= 1024 && size < 1048576) {
+            return Math.round((size / 1024) * 100.0) / 100.0 + "KB";
         }
-        
-        if(size >= 1048576 && size < 1073741824){
-            return Math.round((size/1024/1024)*100.0)/100.0 + "MB";
+
+        if (size >= 1048576 && size < 1073741824) {
+            return Math.round((size / 1024 / 1024) * 100.0) / 100.0 + "MB";
         }
-        
-        if(size >= 1073741824 && size < 1099511627776L){
-            return Math.round((size/1024/1024/1024)*100.0)/100.0 + "GB";
+
+        if (size >= 1073741824 && size < 1099511627776L) {
+            return Math.round((size / 1024 / 1024 / 1024) * 100.0) / 100.0 + "GB";
         }
-        
-        return Math.round((size/1024/1024/1024/1024)*100.0)/100.0 + "TB";
+
+        return Math.round((size / 1024 / 1024 / 1024 / 1024) * 100.0) / 100.0 + "TB";
     }
 }
