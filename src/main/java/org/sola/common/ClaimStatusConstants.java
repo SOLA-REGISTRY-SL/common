@@ -5,6 +5,9 @@ public class ClaimStatusConstants {
     /** Withdrawn status of claim. */
     public static final String WITHDRAWN = "withdrawn";
     
+    /** Created status of claim. */
+    public static final String CREATED = "created";
+    
     /** Rejected status of claim. */
     public static final String REJECTED = "rejected";
     
