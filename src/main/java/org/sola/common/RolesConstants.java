@@ -58,6 +58,7 @@ public class RolesConstants {
     public static final String APPLICATION_VALIDATE = "ApplnValidate";
     public static final String APPLICATION_DISPATCH = "ApplnDispatch";
     public static final String APPLICATION_ARCHIVE = "ApplnArchive";
+    public static final String APPLICATION_TRANSFER = "ApplnTransfer";
     // ADMINISTRATIVE
     public static final String ADMINISTRATIVE_BA_UNIT_SAVE = "BaunitSave";
     public static final String ADMINISTRATIVE_RRR_SAVE = "BaunitrrrSave";
