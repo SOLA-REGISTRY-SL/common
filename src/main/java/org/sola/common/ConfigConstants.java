@@ -365,4 +365,7 @@ public class ConfigConstants {
     
     /** Open Tenure community area where parcels can be claimed */
     public static final String OT_COMMUNITY_AREA = "ot-community-area";
+    
+    /** Full path to PostgreSQL utilities (bin) folder (e.g. C:\Program Files\PostgreSQL\9.1\bin). Used for backup/restore implementation of SOLA Web admin application */
+    public static final String DB_UTILITIES_FOLDER = "db-utilities-folder";
 }
