@@ -230,6 +230,19 @@ public class ConfigConstants {
      * Message body format. text - for simple text format, html - for html format
      */
     public static final String EMAIL_BODY_FORMAT = "email-body-format";
+    
+    
+    
+    /**
+     * New claim challenge body text.
+     */
+    public static final String EMAIL_MSG_REC_NOTIFIABLE_BODY = "email-msg-notifiable-submit-body";
+     /**
+     * Subject text for new user registration on OpenTenure Web-site. Sent to
+     * user.
+     */
+    public static final String EMAIL_MSG_NOTIFIABLE_SUBJECT = "email-msg-notifiable-subject";
+  
     /**
      * New claim challenge body text.
      */
@@ -368,4 +381,5 @@ public class ConfigConstants {
     
     /** Full path to PostgreSQL utilities (bin) folder (e.g. C:\Program Files\PostgreSQL\9.1\bin). Used for backup/restore implementation of SOLA Web admin application */
     public static final String DB_UTILITIES_FOLDER = "db-utilities-folder";
+    
 }
