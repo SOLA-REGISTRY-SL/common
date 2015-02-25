@@ -335,6 +335,16 @@ public class ConfigConstants {
      */
     public static final String EMAIL_MSG_USER_REG_SUBJECT = "email-msg-user-registration-subject";
     /**
+     * Message text for new user registration on OpenTenure Web-site. Sent to
+     * user.
+     */
+    public static final String EMAIL_MSG_ACTIVATION_BODY = "email-msg-user-activation-body";
+    /**
+     * Subject text for new user registration on OpenTenure Web-site. Sent to
+     * user.
+     */
+    public static final String EMAIL_MSG_ACTIVATION_SUBJECT = "email-msg-user-activation-subject";
+    /**
      * Number of attempts to send email with first interval timeout
      */
     public static final String EMAIL_SEND_ATTEMPTS1 = "email-send-attempts1";
