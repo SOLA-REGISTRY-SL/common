@@ -11,6 +11,17 @@ public class EmailVariables {
     public static final String USER_FIRST_NAME = "#{userFirstName}";
     /** User name, used for login into the system */
     public static final String USER_NAME = "#{userName}";
+    /** Name of the person to be notified to(e.g. Mary Smith) */
+    public static final String NOTIFIABLE_PARTY_NAME = "#{notifiablePartyName}";
+    /** Name of the person to be notified about (e.g. John Smith) */
+    public static final String TARGET_PARTY_NAME = "#{targetPartyName}";
+    /** Name of the property to be notified about (e.g. NA67B/16) */
+    public static final String BA_UNIT_NAME = "#{baUnitName}";
+    /** The office that is sending the message */
+    public static final String SENDING_OFFICE = "#{sendingOffice}";
+    /** The action on the interest */
+    public static final String ACTION_TO_NOTIFY = "#{actionToNotify}";
+    
     /** Error message text */
     public static final String ERROR_MESSAGE = "#{error}";
     /** Activation URL, used to activate created user account */
