@@ -102,4 +102,20 @@ public class RolesConstants {
     public static final String CS_MODERATE_CLAIM = "ModerateClaim";
     public static final String CS_REVIEW_CLAIM = "ReviewClaim";
     public static final String CS_RECORD_CLAIM = "RecordClaim";
+     // DATA SECURITY CLASSIFICATION
+    public static final String CLASSIFICATION_CHANGE_CLASS = "ChangeSecClass";
+    public static final String CLASSIFICATION_UNRESTRICTED = "01SEC_Unrestricted";
+    public static final String CLASSIFICATION_RESTRICTED = "02SEC_Restricted";
+    public static final String CLASSIFICATION_CONFIDENTIAL = "03SEC_Confidential";
+    public static final String CLASSIFICATION_SECRET = "04SEC_Secret";
+    public static final String CLASSIFICATION_TOPSECRET = "05SEC_TopSecret";
+    public static final String CLASSIFICATION_SUPPRESSION_ORDER = "10SEC_SuppressOrd";
+    // SERVICES
+     public static final String SERVICE_START_CHECKLIST = "checklist";
+     public static final String SERVICE_START_PUBLIC_DISPLAY = "publicDisplay";
+     public static final String SERVICE_START_OBJECTIONS = "slObjection";
+     public static final String SERVICE_START_NOTIFY = "slNotify";
+     public static final String SERVICE_START_NEGOTIATE = "slNegotiate";
+    
+    
 }
