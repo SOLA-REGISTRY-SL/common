@@ -110,12 +110,6 @@ public class RolesConstants {
     public static final String CLASSIFICATION_SECRET = "04SEC_Secret";
     public static final String CLASSIFICATION_TOPSECRET = "05SEC_TopSecret";
     public static final String CLASSIFICATION_SUPPRESSION_ORDER = "10SEC_SuppressOrd";
-    // SERVICES
-     public static final String SERVICE_START_CHECKLIST = "checklist";
-     public static final String SERVICE_START_PUBLIC_DISPLAY = "publicDisplay";
-     public static final String SERVICE_START_OBJECTIONS = "slObjection";
-     public static final String SERVICE_START_NOTIFY = "slNotify";
-     public static final String SERVICE_START_NEGOTIATE = "slNegotiate";
     
     
 }
