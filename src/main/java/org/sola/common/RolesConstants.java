@@ -78,6 +78,8 @@ public class RolesConstants {
     public static final String GIS_VIEW_MAP = "ViewMap";
     public static final String GIS_PRINT = "PrintMap";
     public static final String GIS_EXPORT_MAP = "ExportMap";
+    public static final String GIS_FEATURE_EDITOR = "MapFeatureEditor";
+    public static final String GIS_ZONE_EDITOR = "MapZoneEditor";
     // CADASTRE
     public static final String CADASTRE_PARCEL_SAVE = "ParcelSave";
     // PARTY
@@ -86,6 +88,7 @@ public class RolesConstants {
     public static final String PARTY_RIGHTHOLDERS_SAVE = "RHSave";
     // REPORTS
     public static final String REPORTS_VIEW = "ReportGenerate";
+    public static final String REPORTS_GENDER = "ReportGender";
     // ADMIN
     public static final String ADMIN_MANAGE_SECURITY = "ManageSecurity";
     public static final String ADMIN_MANAGE_REFDATA = "ManageRefdata";
