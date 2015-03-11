@@ -35,11 +35,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.text.ParseException;
 import java.util.prefs.Preferences;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
 import javax.swing.KeyStroke;
+import javax.swing.UIManager;
 
 /**
  * Provides methods to work with Windows.
@@ -169,5 +172,44 @@ public class WindowUtility {
         dialog.getRootPane().registerKeyboardAction(escListener,
                 KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),
                 JComponent.WHEN_IN_FOCUSED_WINDOW);
+    }
+
+    /**
+     * Obtains the title bar icon configured for this SOLA application based on
+     * the LAF theme.
+     *
+     * @return
+     */
+    public static Icon getTitleBarIcon() {
+        Icon result = UIManager.getIcon("solaTitleBarIcon");
+        if (result == null) {
+            result = new ImageIcon();
+        }
+        return result;
+    }
+
+    /**
+     * Obtains the title bar image configured for this SOLA application based on
+     * the LAF theme.
+     *
+     * @return
+     */
+    public static Image getTitleBarImage() {
+        return ((ImageIcon) getTitleBarIcon()).getImage();
+    }
+
+    /**
+     * Formats the frame title by moving it 8 spaces to the left to account for
+     * the sola image icon.
+     *
+     * @param title Title of the dialog
+     * @return
+     */
+    public static String formatFrameTitle(String title) {
+        String pre = "";
+        if (UIManager.getBoolean("solaLAF")) {
+            pre = String.format("%" + 8 + "s", pre);
+        }
+        return pre + title;
     }
 }
