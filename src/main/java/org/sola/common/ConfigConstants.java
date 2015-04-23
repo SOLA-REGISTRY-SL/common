@@ -223,6 +223,10 @@ public class ConfigConstants {
      */
     public static final String EMAIL_ADMIN_NAME = "email-admin-name";
     /**
+     * JNDI name of the mailer service, configured on GlassFish
+     */
+    public static final String EMAIL_MAILER_JNDI_NAME = "email-mailer-jndi-name";
+    /**
      * Enables or disables email service. 1 - enable, 0 - disable.
      */
     public static final String EMAIL_ENABLE_SERVICE = "email-enable-email-service";
