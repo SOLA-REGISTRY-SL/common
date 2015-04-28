@@ -206,10 +206,6 @@ public class ConfigConstants {
      */
     public static final String MAX_UPLOADING_DAILY_LIMIT = "max-uploading-daily-limit";
     /**
-     * Duration of moderation time in days for submitted claim.
-     */
-    public static final String MODERATION_DAYS = "moderation-days";
-    /**
      * Account activation timeout in hours. After this time elapsed, activation
      * should expire.
      */
@@ -235,8 +231,6 @@ public class ConfigConstants {
      */
     public static final String EMAIL_BODY_FORMAT = "email-body-format";
     
-    
-    
     /**
      * New claim challenge body text.
      */
@@ -246,76 +240,7 @@ public class ConfigConstants {
      * user.
      */
     public static final String EMAIL_MSG_NOTIFIABLE_SUBJECT = "email-msg-notifiable-subject";
-  
-    /**
-     * New claim challenge body text.
-     */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_SUBMITTED_BODY = "email-msg-claim-challenge-submitted-body";
-    /**
-     * New claim challenge subject text.
-     */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_SUBMITTED_SUBJECT = "email-msg-claim-challenge-submitted-subject";
-    /**
-     * Claim challenge update body text.
-     */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_UPDATED_BODY = "email-msg-claim-challenge-updated-body";
-    /**
-     * Claim challenge update subject text.
-     */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_UPDATED_SUBJECT = "email-msg-claim-challenge-updated-subject";
-    /**
-     * New claim body text.
-     */
-    public static final String EMAIL_MSG_CLAIM_SUBMITTED_BODY = "email-msg-claim-submit-body";
-    /**
-     * New claim subject text.
-     */
-    public static final String EMAIL_MSG_CLAIM_SUBMITTED_SUBJECT = "email-msg-claim-submit-subject";
-    /**
-     * Body text for claim withdrawal action
-     */
-    public static final String EMAIL_MSG_CLAIM_WITHDRAW_BODY = "email-msg-claim-withdraw-body";
-    /**
-     * Subject text for claim withdrawal action
-     */
-    public static final String EMAIL_MSG_CLAIM_WITHDRAW_SUBJECT = "email-msg-claim-withdraw-subject";
-    /** Body text for claim reject action */
-    public static final String EMAIL_MSG_CLAIM_REJECT_BODY = "email-msg-claim-reject-body";
-    /** Subject text for claim reject action */
-    public static final String EMAIL_MSG_CLAIM_REJECT_SUBJECT = "email-msg-claim-reject-subject";
-    /** Body text for claim review approve action */
-    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_BODY = "email-msg-claim-approve-review-body";
-    /** Subject text for claim review approve action */
-    public static final String EMAIL_MSG_CLAIM_REVIEW_APPROVE_SUBJECT = "email-msg-claim-approve-review-subject";
-    /** Body text for claim moderation approve action */
-    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_BODY = "email-msg-claim-approve-moderation-body";
-    /** Subject text for claim moderation approve action */
-    public static final String EMAIL_MSG_CLAIM_MODERATION_APPROVE_SUBJECT = "email-msg-claim-approve-moderation-subject";
-    /**
-     * Claim update body text.
-     */
-    public static final String EMAIL_MSG_CLAIM_UPDATED_BODY = "email-msg-claim-updated-body";
-    /**
-     * Claim update subject text.
-     */
-    public static final String EMAIL_MSG_CLAIM_UPDATED_SUBJECT = "email-msg-claim-updated-subject";
-    /** Body text for claim challenge review action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REVIEW_BODY = "email-msg-claim-challenge-approve-review-body";
-    /** Subject text for claim challenge review action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REVIEW_SUBJECT = "email-msg-claim-challenge-approve-review-subject";
-    /** Body text for claim challenge moderation action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_MODERATION_BODY = "email-msg-claim-challenge-approve-moderation-body";
-    /** Subject text for claim challenge moderation action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_MODERATION_SUBJECT = "email-msg-claim-challenge-approve-moderation-subj";
-    /** Body text for claim challenge rejection action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REJECTION_BODY = "email-msg-claim-challenge-reject-body";
-    /** Subject text for claim challenge rejection action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_REJECTION_SUBJECT = "email-msg-claim-challenge-reject-subject";
-    /** Body text for claim challenge withdrawal action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_WITHDRAWAL_BODY = "email-msg-claim-challenge-withdraw-body";
-    /** Subject text for claim challenge withdrawal action. */
-    public static final String EMAIL_MSG_CLAIM_CHALLENGE_WITHDRAWAL_SUBJECT = "email-msg-claim-challenge-withdraw-subject";
-    /**
+      /**
      * Message text for delivery failure.
      */
     public static final String EMAIL_MSG_FAILED_SEND_BODY = "email-msg-failed-send-body";
@@ -323,44 +248,6 @@ public class ConfigConstants {
      * Subject text for delivery failure of message.
      */
     public static final String EMAIL_MSG_FAILED_SEND_SUBJECT = "email-msg-failed-send-subject";
-    /**
-     * Message text for password restore.
-     */
-    public static final String EMAIL_MSG_PASSWD_RESTORE_BODY = "email-msg-pswd-restore-body";
-    /**
-     * Password restore subject.
-     */
-    public static final String EMAIL_MSG_PASSWD_RESTORE_SUBJECT = "email-msg-pswd-restore-subject";
-    /**
-     * Message text for new user registration on OpenTenure Web-site. Sent to
-     * user.
-     */
-    public static final String EMAIL_MSG_REG_BODY = "email-msg-reg-body";
-    /**
-     * Subject text for new user registration on OpenTenure Web-site. Sent to
-     * user.
-     */
-    public static final String EMAIL_MSG_REG_SUBJECT = "email-msg-reg-subject";
-    /**
-     * Message text for new user registration on OpenTenure Web-site. Sent to
-     * system administrator.
-     */
-    public static final String EMAIL_MSG_USER_REG_BODY = "email-msg-user-registration-body";
-    /**
-     * Subject text for new user registration on OpenTenure Web-site. Sent to
-     * system administrator.
-     */
-    public static final String EMAIL_MSG_USER_REG_SUBJECT = "email-msg-user-registration-subject";
-    /**
-     * Message text for new user registration on OpenTenure Web-site. Sent to
-     * user.
-     */
-    public static final String EMAIL_MSG_ACTIVATION_BODY = "email-msg-user-activation-body";
-    /**
-     * Subject text for new user registration on OpenTenure Web-site. Sent to
-     * user.
-     */
-    public static final String EMAIL_MSG_ACTIVATION_SUBJECT = "email-msg-user-activation-subject";
     /**
      * Number of attempts to send email with first interval timeout
      */
@@ -389,10 +276,7 @@ public class ConfigConstants {
      * Time interval in seconds for email service to check and process scheduled messages.
      */
     public static final String EMAIL_SERVICE_INTERVAL = "email-service-interval";
-    
-    /** Open Tenure community area where parcels can be claimed */
-    public static final String OT_COMMUNITY_AREA = "ot-community-area";
-    
+        
     /** Full path to PostgreSQL utilities (bin) folder (e.g. C:\Program Files\PostgreSQL\9.1\bin). Used for backup/restore implementation of SOLA Web admin application */
     public static final String DB_UTILITIES_FOLDER = "db-utilities-folder";
     
