@@ -114,9 +114,11 @@ public class RolesConstants {
     public static final String CLASSIFICATION_TOPSECRET = "05SEC_TopSecret";
     public static final String CLASSIFICATION_SUPPRESSION_ORDER = "10SEC_SuppressOrd";
     
+    
 //    SERVICES
      public static final String SERVICE_START_NOTIFY = "Notify";
     
-    
+    //SURVEY PLAN VIEW
+      public static final String CADASTRE_SURVEY_PLAN_LIST = "SurveyPlanListReturn";
     
 }
