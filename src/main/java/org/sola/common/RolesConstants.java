@@ -119,6 +119,6 @@ public class RolesConstants {
      public static final String SERVICE_START_NOTIFY = "Notify";
     
     //SURVEY PLAN VIEW
-      public static final String CADASTRE_SURVEY_PLAN_LIST = "SurveyPlanListReturn";
+      public static final String CADASTRE_SURVEY_PLAN_LIST = "ReportGenerate";
     
 }
