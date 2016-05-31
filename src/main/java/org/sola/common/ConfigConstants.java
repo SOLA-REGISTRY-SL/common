@@ -167,6 +167,14 @@ public class ConfigConstants {
      * Default 5
      */
     public static final String MAP_SHIFT_TOLERANCE_URBAN = "map-shift-tolernace-urban";
+   
+     /**
+     * system-crs - The crs of the geographic data administered by the system.
+     * Users will need to restart their client applications if they want changes
+     * to this setting to take effect. Default is 32702 (i.e. New Zealand)
+     */
+    public static final String SYSTEM_CRS = "system-crs";
+    
     /**
      * map-srid - The srid of the geographic data administered by the system.
      * Users will need to restart their client applications if they want changes
