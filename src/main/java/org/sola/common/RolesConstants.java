@@ -120,6 +120,9 @@ public class RolesConstants {
     // SURVEY PLAN VIEW
     public static final String CADASTRE_SURVEY_PLAN_LIST = "ReportGenerate";
 
-    // State land clearance
+    // Survey plan roles
     public static final String STATE_LAND_CLEARANCE = "StateLandClearance";
+    public static final String MANAGE_SURVEY_PLAN = "ManageSurveyPlan";
+    public static final String PLANNING_CLEARANCE = "PlanningClearance";
+    public static final String ENVIRONMENT_CLEARANCE = "EvironmentClearance";
 }
